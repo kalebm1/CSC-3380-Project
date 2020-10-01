@@ -1,0 +1,668 @@
+body {
+	background-color:#420039;
+	font-family: 'Montserrat';
+	font-size: 16px;
+}
+
+.text{
+	font-size: 50px !important;
+	position: fixed;
+	color:white;
+	right: 0px;
+	line-height: 0px;
+	padding-top: 20px;
+	top: 2px;
+}
+
+.host-info{
+	color:white;
+	text-align:center;
+}
+
+.live{
+	color: yellow;
+	text-align:center;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	border-color:white; 
+	padding: 15px;
+	position:fixed;
+	left:50%;
+	bottom: 10px;
+	background:#420039;
+
+}
+
+.live:hover {
+  background-color: grey;
+}
+
+.button{
+	margin-top:80px;
+	padding: 80px;
+	background-color: yellow;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	border-color:white; 
+	border-spacing:15px;
+	position:fixed;
+	bottom: 0;
+
+}
+
+.playlist{
+	bottom: 10px;
+	color: yellow;
+	line-height: 0;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: white;
+	position:fixed;
+	padding: 15px;
+	left:0;
+	background:#420039;
+}
+
+.playlist:hover {
+  background-color: grey;
+}
+
+
+
+
+.search{
+	color: yellow;
+	text-align:center;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	border-color:white; 
+	padding: 15px;
+	padding-right: 25px;
+	padding-left:25px;
+	position:fixed;
+	right:0%;
+	margin-right: 2px;
+	bottom: 10px;
+	background:#420039;
+
+}
+
+.search:hover {
+  background-color: grey;
+}
+
+.bottom-bar{
+	background-color:#420039 !important;
+}
+
+.images{
+	padding-top:50px;
+
+}
+
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+
+}
+
+img{
+	max-height: 200px;
+}
+
+
+.image3{
+	display:inline-block;
+	float:center;
+	margin-top: 50px;
+	margin: 25px 15px 15px 15px;
+}
+
+
+ /* Style the search box inside the navigation bar */
+.search-bar input[type=text] {
+  float: left;
+  font-family:'Montserrat';
+  padding: 15px;
+  background-color: grey;
+  color:white;
+  border-style: solid;
+  border-color:black;
+  border-radius: 6px;
+  border-width: 3px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 30px;
+  width:auto;
+}
+.search-bar{
+	color:white;
+	float:left;
+	font-size:60px;
+}
+
+/* all */
+::-webkit-input-placeholder { /* Webkit */
+   color: white;
+}
+ 
+:-moz-placeholder { /* Firefox 18-4 */
+   color: white;  
+}
+ 
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+ 
+:-ms-input-placeholder {  /*  IE10+  */
+   color: white;  
+}
+
+
+.user-profile{
+	color: white;
+	display:inline;
+	font-family:'Montserrat';
+	float:left;
+
+}
+.host-info{
+	text-align:center;
+	vertical-align: center;
+}
+
+.user-info-image{
+	display:inline-block;
+	float:center;
+	padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.example {
+
+    margin: 50px auto 0;
+    width: 400px;
+}
+.player {
+    background: transparent url("../images/spr.png") no-repeat scroll center top;
+    height: 162px;
+    position: relative;
+    width: 326px;
+    z-index: 2;
+}
+.title, .artist {
+    font-family: verdana;
+    left: 167px;
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.title {
+
+    color: #FFFFFF;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    top: 23px;
+
+}
+
+.artist {
+
+    color: #EEEEEE;
+
+    font-size: 12px;
+
+    top: 40px;
+
+}
+
+.pl {
+
+    background: transparent url("../images/spr.png") no-repeat scroll -274px -175px;
+
+    cursor: pointer;
+
+    height: 34px;
+
+    left: 270px;
+
+    position: absolute;
+
+    top: 20px;
+
+    width: 32px;
+
+}
+
+.pl:hover {
+
+    top: 21px;
+
+}
+
+.cover {
+
+    background: transparent url(../data/cover1.jpg) no-repeat scroll center top;
+
+    border-radius: 5px 5px 5px 5px;
+
+    height: 94px;
+
+    left: 20px;
+
+    position: absolute;
+
+    top: 20px;
+
+    width: 94px;
+
+}
+
+.controls {
+
+    cursor: pointer;
+
+    height: 23px;
+
+    left: 167px;
+
+    position: absolute;
+
+    top: 65px;
+
+    width: 138px;
+
+}
+
+.controls .play, .controls .pause, .controls .rew, .controls .fwd {
+
+    background: transparent url("../images/spr.png") no-repeat scroll 0 0;
+
+    float: left;
+
+    height: 100%;
+
+    width: 33%;
+
+}
+
+.controls .play {
+
+    background-position: -8px -171px;
+
+}
+
+.controls .pause {
+
+    background-position: -8px -198px;
+
+    display: none;
+
+}
+
+.controls .rew {
+
+    background-position: -54px -171px;
+
+}
+
+.controls .fwd {
+
+    background-position: -100px -171px;
+
+}
+
+.controls .play:hover {
+
+    background-position: -8px -170px;
+
+}
+
+.controls .pause:hover {
+
+    background-position: -8px -197px;
+
+}
+
+.controls .rew:hover {
+
+    background-position: -54px -170px;
+
+}
+
+.controls .fwd:hover {
+
+    background-position: -100px -170px;
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+.controls .visible {
+
+    display: block;
+
+}
+
+.volume {
+
+    height: 11px;
+
+    left: 186px;
+
+    position: absolute;
+
+    top: 96px;
+
+    width: 112px;
+
+}
+
+.tracker {
+
+    height: 15px;
+
+    left: 20px;
+
+    position: absolute;
+
+    top: 126px;
+
+    width: 285px;
+
+}
+
+.ui-slider-range {
+
+    background: transparent url("../images/spr.png") no-repeat scroll 5px -222px;
+
+    height: 100%;
+
+    position: absolute;
+
+    top: 0;
+
+}
+
+.ui-slider-handle {
+
+    cursor: pointer;
+
+	height: 10px;
+
+    margin-left: -5px;
+
+    position: absolute;
+
+    top: 2px;
+
+    width: 10px;
+
+    z-index: 2;
+
+}
+
+.volume .ui-slider-handle {
+
+    background: url("../images/spr.png") no-repeat scroll -201px -188px rgba(0, 0, 0, 0);
+
+    height: 13px;
+
+    width: 13px;
+}
+/*
+.playlist {
+    background-color: #333333;
+    border-radius: 5px 5px 5px 5px;
+    list-style-type: none;
+    margin: -10px 0 0 2px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    position: relative;
+    width: 326px;
+    z-index: 1;
+}
+.playlist li {
+    color: #EEEEEE;
+    cursor: pointer;
+    margin: 0 0 5px 15px;
+}
+.playlist li.active {
+    font-weight: bold;
+}
+*/
+
+
+
+
+
+
+
+
+
+/* Bordered form */
+form {
+  /*border: 3px solid #f1f1f1;*/
+  
+}
+label{
+	color:white;
+}
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.login_text{
+	text-align:center;
+	font-size:50px;
+	margin: 24px 0 12px 0;
+	color:white;
+	font-family:'Montserrat';
+}
+
+#new_response{
+    color:white;
+    font:24px;
+    padding-top:30px;
+}
+
+.login_button{
+    color: yellow;
+	text-align:center;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	border-color:white; 
+	padding: 15px;
+	padding-right: 25px;
+	padding-left:25px;
+	position:fixed;
+	top: 10px;
+	background:#420039;
+    
+}
+
+p, h1, h2,h3,h4,h5,h6{
+    color:white;
+}
+
+h4,.search-bar{
+    position:fixed;
+    left:30%;
+}
+
+.wrapper{
+    position:fixed;
+    left:40% !important;
+    top:35% !important;
+}
+
+.btn{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    border-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+    padding-bottom: 10px;
+}
+.btn:hover{
+    background-color:#4095c6;
+}
+
+@media all and (max-width: 30em){
+    .btn{
+        display:block;
+        margin:0.2em auto;
+    }
+}
+
+.search_results{
+    position:fixed;
+    display:block;
+    color: white;
+    font-size: 24px;
+    top: 40% !important;
+    left: 20% !important;
+}
+.search-wrapper{
+    display: inline;
+}
+#results{
+    text-align:center;
+    padding-bottom:25px;
+    color:white;
+    font-size:25px;
+    padding-top:80px;
+}
+
+#search-number{
+    padding-bottom:15px;
+    color: #808080;
+}
+
+.song_list, .indiv_songs, #song_here{
+    color: white;
+    padding-top: 20px;
+    text-align:center !important;
+}
+
+#controls{
+    color: #4caf4f;
+}
+#follow{
+    border-radius: 8px;
+    max-width: 70%;
+    height: auto;
+    float: left;
+}
+
+#name{
+    font-size:40px;
+    text-align:left;
+}
+
+#tweet-container{
+    position:fixed;
+    bottom:40px;
+    left:10px;
+}
+#role{
+    visibility: hidden;
+}
